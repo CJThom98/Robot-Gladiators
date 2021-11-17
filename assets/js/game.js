@@ -25,10 +25,10 @@ for(var i = 0; i < enemyNames.length; i++) {
   console.log(enemyNames[i] + " is at " + i + " index");
 }
 
-var fight = function() {
+var fight = function(enemyName) {
   window.alert("Welcome to Robot Gladiators!");
 
-  if (promptFight === "fight" || promptFight === "FIGHT") {
+  if (promptFight === "fight" || promptFight === "FIGHT"){
   enemyHealth = enemyHealth - playerAttack;
   console.log(
     playerName + " attacked " + enemyNames + ". " + enemyNames + " now has " + enemyHealth + " health remaining."
@@ -68,4 +68,6 @@ var fight = function() {
 }
 
 };
-//fight ();
+for(var i = 0; i < enemyNames.length; i++) {
+  fight(enemyNames[i]);
+}
