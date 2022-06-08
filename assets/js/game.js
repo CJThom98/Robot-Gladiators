@@ -159,6 +159,8 @@ var randomNumber = function(min, max) {
     return value;
 }
 
+
+
 var playerInfo = {
     name: window.prompt("What is your robot's name?"),
     health: 100,
