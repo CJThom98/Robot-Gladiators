@@ -147,8 +147,9 @@ var endGame = function() {
 var shop = function() {
     var shopOptionPrompt = window.prompt("Would you like to REFILL(1) your health, UPGRADE(2) your attack, or LEAVE(3) the store? Please enter one: 1, 2, or 3 to make a choice.");
 
+    shopOptionPrompt = parseInt(shopOptionPrompt);
+    
     // use switch to carry out action
-    debugger;
     switch (shopOptionPrompt) {
         case 1:
             playerInfo.refillHealth();
